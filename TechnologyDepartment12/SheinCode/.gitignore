@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+/vendor/
+/runtime/
+api/.env
+api/.env.*
+api/vendor/
+api/runtime/
+api/public/uploads/
+Thumbs.db
+.DS_Store

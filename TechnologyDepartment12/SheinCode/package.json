@@ -1,0 +1,12 @@
+{
+  "name": "fraudulent-order-processing",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:admin": "npm --prefix admin run dev",
+    "build:admin": "npm --prefix admin run build",
+    "dev:www": "npm --prefix www run dev",
+    "build:www": "npm --prefix www run build",
+    "dev:ws": "php api/support_ws_server.php"
+  }
+}

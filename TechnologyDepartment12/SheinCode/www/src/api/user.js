@@ -1,0 +1,16 @@
+import request from './request'
+
+export const login = (data) => request.post('/login', data)
+export const register = (data) => request.post('/register', data)
+export const checkInviteCode = (inviteCode) => request.get('/check-invite-code', { params: { invite_code: inviteCode } })
+export const getUserInfo = () => request.get('/user/info')
+export const sendHeartbeat = () => request.post('/user/heartbeat', null, { skipAuthRedirect: true })
+export const changeLoginPassword = (data) => request.post('/user/password', data)
+export const changeWithdrawalPassword = (data) => request.post('/user/withdrawal-password', data)
+export const updateUserProfile = (data) => request.post('/user/profile', data)
+export const getUserWallet = () => request.get('/user/wallet')
+export const saveUserWallet = (data) => request.post('/user/wallet', data)
+export const submitWithdrawal = (data) => request.post('/withdrawals/submit', data)
+export const getBillRecords = (params) => request.get('/bill/records', { params })
+export const getSystemSettings = () => request.get('/system/settings')
+export const getSystemPartners = () => request.get('/system/partners')
